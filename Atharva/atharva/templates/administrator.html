@@ -1,0 +1,61 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="{% static 'assets/css/style.css' %}">
+    <link rel="stylesheet" href="{% static 'assets/css/responsive.css' %}">
+</head>
+<body>
+<center><h1 style="padding:20px;border-bottom:double;">WEBSITE ADMINISTRATION</h1></center>
+<div style="text-align:center;" class="row">
+    <div style="padding:40px;" class="col-6">
+        <div class="container" style="text-align:center;">
+            <h2>Add Partners</h2>
+            <form action="{% url 'webapp:administrator' %}" method="POST" enctype="multipart/form-data">
+                {% csrf_token %}
+                <input class="form-control" type="text" placeholder="Partner Name" name="name"><br>
+                <input class="form-control" type="text" placeholder="Category Number" name="cat_num"><br>
+                <input class="form-control" type="text" placeholder="Description" name="description"><br>
+                <label class="form-label">Image :</label><input type="file" name="myfile"><br>
+                <button class="btn" type="submit">Upload Details</button>
+            </form>
+        </div>
+    </div>
+    <div style="padding:40px;" class="col-6">
+        <div class="container" style="text-align:center;">
+            <h2>Category List</h2>
+            <table class="table">
+              <thead>
+                <tr>
+                  <th scope="col">Cat. Name</th>
+                  <th scope="col">Cat. No.</th>
+                </tr>
+              </thead>
+              <tbody>
+              {% for i in category_list %}
+                <tr>
+                  <td>{{i.name}}</td>
+                  <th>{{i.cat_id}}</th>
+                </tr>
+              {% endfor %}
+              </tbody>
+            </table>
+        </div>
+    </div>
+    <div style="padding:40px;" class="col-6">
+        <div class="container" style="text-align:center;">
+            <h2>Add Clients</h2>
+            <form action="{% url 'webapp:upload_clients' %}" method="POST" enctype="multipart/form-data">
+                {% csrf_token %}
+                <input class="form-control" type="text" placeholder="Client Name" name="client_name"><br>
+                <input class="form-control" type="text" placeholder="Type" name="type_connect"><br>
+                <label class="form-label">Image :</label><input type="file" name="client_img"><br>
+                <button class="btn" type="submit">Upload Details</button>
+            </form>
+        </div>
+    </div>
+</div>
+</body>
+</html>

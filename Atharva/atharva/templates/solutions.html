@@ -1,0 +1,445 @@
+{% load static %}
+<!doctype html>
+<html class="no-js" lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- SEO Meta Description -->
+    <meta name="description" content="">
+    <meta name="author" content="Themeland">
+
+    <!-- Title  -->
+    <title>Digimax - SEO & Digital Marketing Agency HTML Template | About Us</title>
+
+    <!-- Favicon  -->
+    <link rel="icon" href="{% static 'assets/img/favicon.png' %}">
+
+    <!-- ***** All CSS Files ***** -->
+
+    <!-- Style css -->
+    <link rel="stylesheet" href="{% static 'assets/css/style.css' %}">
+    <link rel="stylesheet" href="{% static 'assets/css/animate.min.css' %}">
+
+    <!-- Responsive css -->
+    <link rel="stylesheet" href="{% static 'assets/css/responsive.css' %}">
+
+</head>
+
+<body>
+    <!--====== Preloader Area Start ======-->
+    <div id="preloader">
+        <!-- Digimax Preloader -->
+        <div id="digimax-preloader" class="digimax-preloader">
+            <!-- Preloader Animation -->
+            <div class="preloader-animation">
+                <!-- Spinner -->
+                <div class="spinner"></div>
+                <!-- Loader -->
+                <div class="loader">
+                    <span data-text-preloader="A" class="animated-letters">A</span>
+                    <span data-text-preloader="T" class="animated-letters">T</span>
+                    <span data-text-preloader="H" class="animated-letters">H</span>
+                    <span data-text-preloader="A" class="animated-letters">A</span>
+                    <span data-text-preloader="R" class="animated-letters">R</span>
+                    <span data-text-preloader="V" class="animated-letters">V</span>
+                    <span data-text-preloader="A" class="animated-letters">A</span>
+                </div>
+                <p class="fw-5 text-center text-uppercase">Loading</p>
+            </div>
+            <!-- Loader Animation -->
+            <div class="loader-animation">
+                <div class="row h-100">
+                    <!-- Single Loader -->
+                    <div class="col-3 single-loader p-0">
+                        <div class="loader-bg"></div>
+                    </div>
+                    <!-- Single Loader -->
+                    <div class="col-3 single-loader p-0">
+                        <div class="loader-bg"></div>
+                    </div>
+                    <!-- Single Loader -->
+                    <div class="col-3 single-loader p-0">
+                        <div class="loader-bg"></div>
+                    </div>
+                    <!-- Single Loader -->
+                    <div class="col-3 single-loader p-0">
+                        <div class="loader-bg"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--====== Preloader Area End ======-->
+
+    <!--====== Scroll To Top Area Start ======-->
+    <div id="scrollUp" title="Scroll To Top">
+        <i class="fas fa-arrow-up"></i>
+    </div>
+    <!--====== Scroll To Top Area End ======-->
+
+    <div class="main overflow-hidden">
+        <!-- ***** Header Start ***** -->
+        <header id="header">
+            <!-- Navbar -->
+            <nav data-aos="zoom-out" data-aos-delay="800" class="navbar navbar-expand">
+                <div class="container header">
+                    <!-- Navbar Brand-->
+                    <a class="navbar-brand" href="/">
+                        <img class="navbar-brand-regular" src="{% static 'assets/img/logo/logo-white.png' %}" alt="brand-logo">
+                        <img class="navbar-brand-sticky" src="{% static 'assets/img/logo/logo.png' %}" alt="sticky brand-logo">
+                    </a>
+                    <div class="ml-auto"></div>
+                    <!-- Navbar -->
+                    <ul class="navbar-nav items">
+                        <li class="nav-item">
+                            <a style="color:#FF3131;" class="nav-link" href="{% url 'webapp:home' %}">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a style="color:#FF3131;" href="{% url 'webapp:about' %}" class="nav-link">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a style="color:#FF3131;" href="{% url 'webapp:solutions' %}" class="nav-link">Solutions</a>
+                        </li>
+
+                        <li class="nav-item"><a style="color:#FF3131;" href="{% url 'webapp:partners' %}" class="nav-link">Partners</a></li>
+
+                        <li class="nav-item"><a style="color:#FF3131;" href="{% url 'webapp:clients' %}" class="nav-link">clients</a></li>
+                        <li class="nav-item"><a style="color:#FF3131;" href="{% url 'webapp:faq' %}" class="nav-link">FAQ</a></li>
+
+                        <li class="nav-item"><a style="color:#FF3131;" href="404.html" class="nav-link">Careers</a></li>
+
+                    </ul>
+                    <!-- Navbar Icons -->
+                    <ul class="navbar-nav icons">
+                        <li class="nav-item">
+                            <a href="#" class="nav-link" data-toggle="modal" data-target="#search">
+                                <i style="color:#FF3131;" class="fas fa-search"></i>
+                            </a>
+                        </li>
+                        <li class="nav-item social">
+                            <a href="#" class="nav-link"><i style="color:#FF3131;" class="fab fa-facebook-f"></i></a>
+                        </li>
+                        <li class="nav-item social">
+                            <a href="#" class="nav-link"><i style="color:#FF3131;" class="fab fa-twitter"></i></a>
+                        </li>
+                    </ul>
+
+                    <!-- Navbar Toggler -->
+                    <ul class="navbar-nav toggle">
+                        <li class="nav-item">
+                            <a href="#" class="nav-link" data-toggle="modal" data-target="#menu">
+                                <i class="fas fa-bars toggle-icon m-0"></i>
+                            </a>
+                        </li>
+                    </ul>
+
+                    <!-- Navbar Action Button -->
+                    <ul class="navbar-nav action">
+                        <li class="nav-item ml-3">
+                            <a  style="color:#FF3131;" href="{% url 'webapp:contact' %}" class="btn ml-lg-auto btn-bordered-white"><i style="color:#FF3131;" class="fas fa-paper-plane contact-icon mr-md-2"></i>Contact Us</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </header>
+        <!-- ***** Header End ***** -->
+
+        <!-- ***** Breadcrumb Area Start ***** -->
+        <section class="section breadcrumb-area-solutions overlay-dark d-flex align-items-center">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <div class="breadcrumb-content d-flex flex-column align-items-center text-center">
+                            <h1 class="text-white text-uppercase mb-3">SOLUTIONS</h1>
+                            <ol class="breadcrumb">
+                                <li class="breadcrumb-item"><a class="text-uppercase text-white" href="{% url 'webapp:home' %}">Home</a></li>
+                                <li class="breadcrumb-item"><a class="text-uppercase text-white" href="">Pages</a></li>
+                                <li class="breadcrumb-item text-white active">Solutions</li>
+                            </ol>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- ***** Breadcrumb Area End ***** -->
+
+        <!-- ***** About Area Start ***** -->
+        <section class="section about-area ptb_100">
+            <div class="container">
+                <div class="row justify-content-between align-items-center">
+                    <div class="col-12 col-lg-6">
+                        <!-- About Thumb -->
+                        <div class="about-thumb text-center">
+                            <img src="{% static 'assets/img/Atharva-Infotech-cropped.png' %}" alt="">
+                        </div>
+                    </div>
+                    <div class="col-12 col-lg-6">
+                        <div class="about-content section-heading text-center text-lg-left pl-md-4 mt-5 mt-lg-0 mb-0">
+                            <h2 class="mb-3">Features of <br>X-Connect</h2>
+                            <p><b>Brief: X CONNECT -</b> is an online booking system for travel industry. The system is capable of any number of xml connectivity and you can add in module for Hotel, Transfers, Sightseeing tours, Rail, Flights and Travel Insurance. X Connect is a flexible system which can be used for B2B, B2C, B2E, B2B2E or B2B2C selling.</p><br>
+                            <p><b>Ready made Connectivity:</b> The system is READY-CONNECTED with most of the major OTA suppliers available on xml like Expedia, Hotelbeds, Agoda, Miki, Travco, DOTW,  Agoda etc.  </p><br>
+                            <p><b>Multiple distribution channels:</b> Create and manage users at different levels – B2C, Branches, Wholesaler, Subagents & Corporates. All bookings can be viewed and controlled from a central system. </p><br>
+                            <p><b>Online booking engine:</b> Completely Web-based site with real-time rates and availability from your connected suppliers. You can add on more modules – Transfers, Tours, Car Rentals, Travel Insurance, Flights, Rail products, Packages to create a one stop booking engine for your organisation. Includes Auto-documentation of vouchers, invoices and payment receipts, supplier payment. </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- ***** About Area End ***** -->
+
+        <!-- ***** Our Goal Area Start ***** -->
+        <section class="section our-goal ptb_100">
+            <div class="container">
+                <div class="row justify-content-between align-items-center">
+                    <div class="col-12 col-lg-6">
+                        <!-- Goal Content -->
+                        <div class="goal-content section-heading text-center text-lg-left pr-md-4 mb-0">
+                            <p><b>Email alerts:</b> Autogenerates emails for booking confirmation and cancellations. Sends emails to alert on bookings entering cancellation period to ensure timely action from users. Auto cancellation of non-reconfirmed bookings also available in the system.</p><br>
+                            <p><b>Faster turnaround time:</b> X Connect performs search using advanced multi-threading technology and will send request to multiple suppliers at the same time. Results from suppliers are filtered and displayed based on the cheapest rates saving you the valuable time spent in comparing suppliers.</p><br>
+                            <p><b>Flexible Margin / Mark-up Module:</b> Includes a very flexible mark-up module where you can define the mark-up based on user role – subagents, branch office, wholesaler, corporate, etc. Advanced margin module helps define margins based on supplier.</p><br>
+                            <p><b>Search by Nationality:</b> If you sell to different markets or if the nationality of your clients can be different, the system can search for the right price based on the Nationality of the client.</p><br>
+                            <p><b>Booking Quote Module:</b> Use the system to send quotes by email from the search results. You can send for multiple hotels with hotel information and day wise rates (where available).</p><br>
+                        </div>
+                    </div>
+                    <div class="col-12 col-lg-6">
+                        <!-- Goal Thumb -->
+                        <div class="goal-thumb mt-5 mt-lg-0">
+                            <img src="{% static 'assets/img/Atharva-Infotech1.png' %}" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section about-area ptb_100">
+            <div class="container">
+                <div class="row justify-content-between align-items-center">
+                    <div class="col-12 col-lg-6">
+                        <!-- About Thumb -->
+                        <div class="about-thumb text-center">
+                            <img src="{% static 'assets/img/Atharva-Infotech2.png' %}" alt="">
+                        </div>
+                    </div>
+                    <div class="col-12 col-lg-6">
+                        <!-- About Content -->
+                        <div class="about-content section-heading text-center text-lg-left pl-md-4 mt-5 mt-lg-0 mb-0">
+                            <p><b>Hotel Location Map:</b> X Connect is integrated with Google Maps to provide users the feature to view the location map of the hotels in search results. You can also use the location filter to view hotels by location.</p><br>
+                            <p><b>Credit Control:</b> Controlling of credit to users can be done by various parameters – On booking, voucher issuance, by service dates, etc. Auto reminders of credit utilization is also possible through the system.</p><br>
+                            <p><b>MIS:</b> The system can generate a wide range of reports based on productivity, activity, accounts, etc.</p><br>
+                            <p><b>Manage Exchange Rates:</b> The Rate of Exchange feature enables you to update rate of exchange for various currencies manually or automatically. You are able to setup a buying currency and fix selling currency by agency or by region.</p><br>
+                            <p><b>Flexible pricing plan:</b> We have multiple pricing plans to suit every need. You can choose based on your business requirement and determine the number of xmls and modules required. There will be a one time nominal setup and monthly maintenance charge which includes hosting, server space, database, daily xml maintenance, mapping of hotels and destinations.</p><br>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="section our-goal ptb_100">
+            <div class="container">
+                <div class="row justify-content-between align-items-center">
+                    <div class="col-12 col-lg-6">
+                        <!-- Goal Content -->
+                        <div class="goal-content section-heading text-center text-lg-left pr-md-4 mb-0">
+                            <h2 class="mb-3">Features of<br> E-Net</h2>
+                            <p><b>Brief:</b> E Net A web based system where you can sell your contracted net rates from multiple suppliers. You can maintain your own contracted rates for hotels, transfers and sightseeing tours. Can easily add / control the service information, images, market wise rates, cancellation policies, allocations/ free sale, sale promotions like pay and stay offer and early bird offer through this system.
+                                <br>
+                                <br>
+                                <b>All X Connect features are available in E Net also and it is possible to combine both so can have a system with Own contracting module + XML connectivity.</b>
+                            </p><br>
+                        </div>
+                    </div>
+                    <div class="col-12 col-lg-6">
+                        <div class="goal-thumb mt-5 mt-lg-0">
+                            <img src="{% static 'assets/img/Atharva-Infotech3-cropped.png' %}" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- ***** Our Goal Area End ***** -->
+
+        <!-- ***** Team Area Start ***** -->
+        <section class="section team-area bg-grey ptb_100">
+            <!-- Shape Top -->
+            <div class="shape shape-top">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 100" preserveAspectRatio="none" fill="#FFFFFF">
+                    <path class="shape-fill" d="M421.9,6.5c22.6-2.5,51.5,0.4,75.5,5.3c23.6,4.9,70.9,23.5,100.5,35.7c75.8,32.2,133.7,44.5,192.6,49.7
+                c23.6,2.1,48.7,3.5,103.4-2.5c54.7-6,106.2-25.6,106.2-25.6V0H0v30.3c0,0,72,32.6,158.4,30.5c39.2-0.7,92.8-6.7,134-22.4
+                c21.2-8.1,52.2-18.2,79.7-24.2C399.3,7.9,411.6,7.5,421.9,6.5z"></path>
+                </svg>
+            </div>
+            <!-- Shape Bottom -->
+            <div class="shape shape-bottom">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 100" preserveAspectRatio="none" fill="#FFFFFF">
+                    <path class="shape-fill" d="M421.9,6.5c22.6-2.5,51.5,0.4,75.5,5.3c23.6,4.9,70.9,23.5,100.5,35.7c75.8,32.2,133.7,44.5,192.6,49.7
+        c23.6,2.1,48.7,3.5,103.4-2.5c54.7-6,106.2-25.6,106.2-25.6V0H0v30.3c0,0,72,32.6,158.4,30.5c39.2-0.7,92.8-6.7,134-22.4
+        c21.2-8.1,52.2-18.2,79.7-24.2C399.3,7.9,411.6,7.5,421.9,6.5z"></path>
+                </svg>
+            </div>
+        </section>
+        <!-- ***** Team Area End ***** -->
+
+        <!--====== Contact Area Start ======-->
+        <!--====== Contact Area End ======-->
+
+        <!--====== Call To Action Area Start ======-->
+        <!--====== Call To Action Area End ======-->
+
+        <!--====== Footer Area Start ======-->
+        <footer class="section footer-area">
+            <!-- Footer Top -->
+            <div class="footer-top ptb_100">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-12 col-sm-6 col-lg-3">
+                            <!-- Footer Items -->
+                            <div class="footer-items">
+                                <!-- Footer Title -->
+                                <h3 class="footer-title text-uppercase mb-2">About Us</h3>
+                                <ul>
+                                    <li class="py-2"><a class="text-black-50" href="#">Company Profile</a></li>
+                                    <li class="py-2"><a class="text-black-50" href="#">Testimonials</a></li>
+                                    <li class="py-2"><a class="text-black-50" href="#">Careers</a></li>
+                                    <li class="py-2"><a class="text-black-50" href="{% url 'webapp:partners' %}">Partners</a></li>
+                                    <li class="py-2"><a class="text-black-50" href="#">Affiliate Program</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-12 col-sm-6 col-lg-3">
+                            <!-- Footer Items -->
+                            <div class="footer-items">
+                                <!-- Footer Title -->
+                                <h3 class="footer-title text-uppercase mb-2">Services</h3>
+                                <ul>
+                                    <li class="py-2"><a class="text-black-50" href="#">Web Application</a></li>
+                                    <li class="py-2"><a class="text-black-50" href="#">Product Management</a></li>
+                                    <li class="py-2"><a class="text-black-50" href="#">User Interaction Design</a></li>
+                                    <li class="py-2"><a class="text-black-50" href="#">UX Consultant</a></li>
+                                    <li class="py-2"><a class="text-black-50" href="#">Social Media Marketing</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-12 col-sm-6 col-lg-3">
+                            <!-- Footer Items -->
+                            <div class="footer-items">
+                                <!-- Footer Title -->
+                                <h3 class="footer-title text-uppercase mb-2">Support</h3>
+                                <ul>
+                                    <li class="py-2"><a class="text-black-50" href="#">Frequently Asked</a></li>
+                                    <li class="py-2"><a class="text-black-50" href="#">Terms &amp; Conditions</a></li>
+                                    <li class="py-2"><a class="text-black-50" href="#">Privacy Policy</a></li>
+                                    <li class="py-2"><a class="text-black-50" href="#">Help Center</a></li>
+                                    <li class="py-2"><a class="text-black-50" href="#">Contact Us</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-12 col-sm-6 col-lg-3">
+                            <!-- Footer Items -->
+                            <div class="footer-items">
+                                <!-- Footer Title -->
+                                <h3 class="footer-title text-uppercase mb-2">Follow Us</h3>
+                                <p class="mb-2">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tenetur, quae.</p>
+                                <!-- Social Icons -->
+                                <ul class="social-icons list-inline pt-2">
+                                    <li class="list-inline-item px-1"><a href="#"><i class="fab fa-facebook"></i></a></li>
+                                    <li class="list-inline-item px-1"><a href="#"><i class="fab fa-twitter"></i></a></li>
+                                    <li class="list-inline-item px-1"><a href="#"><i class="fab fa-google-plus"></i></a></li>
+                                    <li class="list-inline-item px-1"><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
+                                    <li class="list-inline-item px-1"><a href="#"><i class="fab fa-instagram"></i></a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Footer Bottom -->
+            <div class="footer-bottom bg-grey">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-12">
+                            <!-- Copyright Area -->
+                            <div class="copyright-area d-flex flex-wrap justify-content-center justify-content-sm-between text-center py-4">
+                                <!-- Copyright Left -->
+                                <div class="copyright-left">&copy; Copyrights 2020 Atharva Infotech All rights reserved.</div>
+                                <!-- Copyright Right -->
+                                <div class="copyright-right">Made with <i class="fas fa-heart"></i> By <a href="#">Nacre System</a></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <!--====== Footer Area End ======-->
+
+        <!--====== Modal Search Area Start ======-->
+        <div id="search" class="modal fade p-0">
+            <div class="modal-dialog dialog-animated">
+                <div class="modal-content h-100">
+                    <div class="modal-header" data-dismiss="modal">
+                        Search <i class="far fa-times-circle icon-close"></i>
+                    </div>
+                    <div class="modal-body">
+                        <form class="row">
+                            <div class="col-12 align-self-center">
+                                <div class="row">
+                                    <div class="col-12 pb-3">
+                                        <h2 class="search-title mb-3">What are you looking for?</h2>
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent diam lacus, dapibus sed imperdiet consectetur.</p>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-12 input-group">
+                                        <input type="text" class="form-control" placeholder="Enter your keywords">
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-12 input-group align-self-center">
+                                        <button class="btn btn-bordered mt-3">Search</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--====== Modal Search Area End ======-->
+
+        <!--====== Modal Responsive Menu Area Start ======-->
+        <div id="menu" class="modal fade p-0">
+            <div class="modal-dialog dialog-animated">
+                <div class="modal-content h-100">
+                    <div class="modal-header" data-dismiss="modal">
+                        Menu <i class="far fa-times-circle icon-close"></i>
+                    </div>
+                    <div class="menu modal-body">
+                        <div class="row w-100">
+                            <div class="items p-0 col-12 text-center"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--====== Modal Responsive Menu Area End ======-->
+    </div>
+
+
+    <!-- ***** All jQuery Plugins ***** -->
+
+    <!-- jQuery(necessary for all JavaScript plugins) -->
+    <script src="{% static 'assets/js/jquery/jquery-3.5.1.min.js' %}"></script>
+
+    <!-- Bootstrap js -->
+    <script src="{% static 'assets/js/bootstrap/popper.min.js' %}"></script>
+    <script src="{% static 'assets/js/bootstrap/bootstrap.min.js' %}"></script>
+
+    <!-- Plugins js -->
+    <script src="{% static 'assets/js/plugins/plugins.min.js' %}"></script>
+
+    <!-- Active js -->
+    <script src="{% static 'assets/js/active.js' %}"></script>
+</body>
+
+</html>

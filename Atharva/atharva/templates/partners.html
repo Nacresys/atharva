@@ -1,0 +1,220 @@
+{% load static %}
+<!doctype html>
+<html class="no-js" lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- SEO Meta Description -->
+    <meta name="description" content="">
+    <meta name="author" content="Themeland">
+
+    <!-- Title  -->
+    <title>Atharva Infotech</title>
+
+    <!-- Favicon  -->
+    <link rel="icon" href="{% static 'assets/img/favicon.png' %}">
+
+    <!-- ***** All CSS Files ***** -->
+
+    <!-- Style css -->
+    <link rel="stylesheet" href="{% static 'assets/css/style.css' %}">
+
+    <!-- Responsive css -->
+    <link rel="stylesheet" href="{% static 'assets/css/responsive.css' %}">
+
+    <!--orbitron font-->
+    <link href='https://fonts.googleapis.com/css?family=Orbitron' rel='stylesheet'>
+
+</head>
+
+<body>
+    <!--====== Preloader Area Start ======-->
+    <div id="preloader">
+        <!-- Digimax Preloader -->
+        <div id="digimax-preloader" class="digimax-preloader">
+            <!-- Preloader Animation -->
+            <div class="preloader-animation">
+                <!-- Spinner -->
+                <div class="spinner"></div>
+                <!-- Loader -->
+                <div class="loader">
+                    <span data-text-preloader="A" class="animated-letters">A</span>
+                    <span data-text-preloader="T" class="animated-letters">T</span>
+                    <span data-text-preloader="H" class="animated-letters">H</span>
+                    <span data-text-preloader="A" class="animated-letters">A</span>
+                    <span data-text-preloader="R" class="animated-letters">R</span>
+                    <span data-text-preloader="V" class="animated-letters">V</span>
+                    <span data-text-preloader="A" class="animated-letters">A</span>
+                </div>
+                <p class="fw-5 text-center text-uppercase">Loading</p>
+            </div>
+            <!-- Loader Animation -->
+            <div class="loader-animation">
+                <div class="row h-100">
+                    <!-- Single Loader -->
+                    <div class="col-3 single-loader p-0">
+                        <div class="loader-bg"></div>
+                    </div>
+                    <!-- Single Loader -->
+                    <div class="col-3 single-loader p-0">
+                        <div class="loader-bg"></div>
+                    </div>
+                    <!-- Single Loader -->
+                    <div class="col-3 single-loader p-0">
+                        <div class="loader-bg"></div>
+                    </div>
+                    <!-- Single Loader -->
+                    <div class="col-3 single-loader p-0">
+                        <div class="loader-bg"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--====== Preloader Area End ======-->
+
+    <!--====== Scroll To Top Area Start ======-->
+    <div id="scrollUp" title="Scroll To Top">
+        <i class="fas fa-arrow-up"></i>
+    </div>
+    <!--====== Scroll To Top Area End ======-->
+
+    <div class="main overflow-hidden">
+        <!-- ***** Header Start ***** -->
+        <header id="header">
+            <!-- Navbar -->
+            <nav data-aos="zoom-out" data-aos-delay="800" class="navbar navbar-expand">
+                <div class="container header">
+                    <!-- Navbar Brand-->
+                    <a class="navbar-brand" href="/">
+                        <img class="navbar-brand-regular" src="{% static 'assets/img/logo/logo-white.png' %}" alt="brand-logo">
+                        <img class="navbar-brand-sticky" src="{% static 'assets/img/logo/logo.png' %}" alt="sticky brand-logo">
+                    </a>
+                    <div class="ml-auto"></div>
+                    <!-- Navbar -->
+                    <ul class="navbar-nav items">
+                        <li class="nav-item">
+                            <a style="color:#FF3131;" class="nav-link" href="{% url 'webapp:home' %}">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a style="color:#FF3131;" href="{% url 'webapp:about' %}" class="nav-link">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a style="color:#FF3131;" href="{% url 'webapp:solutions' %}" class="nav-link">Solutions</a>
+                        </li>
+
+                        <li class="nav-item"><a style="color:#FF3131;" href="{% url 'webapp:partners' %}" class="nav-link">Partners</a></li>
+
+                        <li class="nav-item"><a style="color:#FF3131;" href="{% url 'webapp:clients' %}" class="nav-link">clients</a></li>
+                        <li class="nav-item"><a style="color:#FF3131;" href="{% url 'webapp:faq' %}" class="nav-link">FAQ</a></li>
+
+                        <li class="nav-item"><a style="color:#FF3131;" href="404.html" class="nav-link">Careers</a></li>
+
+                    </ul>
+                    <!-- Navbar Icons -->
+                    <ul class="navbar-nav icons">
+                        <li class="nav-item">
+                            <a href="#" class="nav-link" data-toggle="modal" data-target="#search">
+                                <i style="color:#FF3131;" class="fas fa-search"></i>
+                            </a>
+                        </li>
+                        <li class="nav-item social">
+                            <a href="#" class="nav-link"><i style="color:#FF3131;" class="fab fa-facebook-f"></i></a>
+                        </li>
+                        <li class="nav-item social">
+                            <a href="#" class="nav-link"><i style="color:#FF3131;" class="fab fa-twitter"></i></a>
+                        </li>
+                    </ul>
+
+                    <!-- Navbar Toggler -->
+                    <ul class="navbar-nav toggle">
+                        <li class="nav-item">
+                            <a href="#" class="nav-link" data-toggle="modal" data-target="#menu">
+                                <i class="fas fa-bars toggle-icon m-0"></i>
+                            </a>
+                        </li>
+                    </ul>
+
+                    <!-- Navbar Action Button -->
+                    <ul class="navbar-nav action">
+                        <li class="nav-item ml-3">
+                            <a  style="color:#FF3131;" href="{% url 'webapp:contact' %}" class="btn ml-lg-auto btn-bordered-white"><i style="color:#FF3131;" class="fas fa-paper-plane contact-icon mr-md-2"></i>Contact Us</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </header>
+
+        <!-- ***** Header End ***** -->
+        <!-- ***** Portfolio Area Start ***** -->
+        <section id="portfolio" class="portfolio-area overflow-hidden ptb_100">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-12 col-md-10 col-lg-7">
+                        <!-- Section Heading -->
+                        <div class="section-heading text-center">
+                            <h2>Our Recent Works</h2>
+                            <p class="d-none d-sm-block mt-4">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laborum obcaecati dignissimos quae quo ad iste ipsum officiis deleniti asperiores sit.</p>
+                            <p class="d-block d-sm-none mt-4">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laborum obcaecati.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="row justify-content-center text-center">
+                    <div class="col-12">
+                        <!-- Portfolio Menu -->
+                        <div class="portfolio-menu btn-group btn-group-toggle flex-wrap justify-content-center text-center mb-4 mb-md-5" data-toggle="buttons">
+                            <label class="btn active d-table text-uppercase p-2">
+                                <input type="radio" value="all" checked class="portfolio-btn">
+                                <span>All</span>
+                            </label>
+                            {% for i in categories %}
+                            <label class="btn d-table text-uppercase p-2">
+                                <input type="radio" value="{{i.cat_id}}" class="portfolio-btn">
+                                <span>{{i.name}}</span>
+                            </label>
+                            {% endfor %}
+                        </div>
+                    </div>
+                </div>
+                <!-- Portfolio Items -->
+                <div class="row items portfolio-items">
+                    {% for j in list %}
+                    <div class="col-12 col-sm-6 col-lg-4 portfolio-item" data-groups='["{{j.category_id}}"]'>
+                        <!-- Single Case Studies -->
+                        <div class="single-case-studies">
+                            <!-- Case Studies Thumb -->
+                            <a href="#">
+                                <img src="{{j.image}}" alt="">
+                            </a>
+                            <!-- Case Studies Overlay -->
+                            <a href="#" class="case-studies-overlay">
+                                <!-- Overlay Text -->
+                                <span class="overlay-text text-center p-3">
+                                    <h3 class="text-white mb-3">{{j.name}}</h3>
+                                    <p class="text-white">{{j.description}}</p>
+                                </span>
+                            </a>
+                        </div>
+                    </div>
+                    {% endfor %}
+                </div>
+            </div>
+        </section>
+        <!-- ***** Portfolio Area End ***** -->
+    </div>
+</body>
+  <script src="{% static 'assets/js/jquery/jquery-3.5.1.min.js' %}"></script>
+
+    <!-- Bootstrap js -->
+    <script src="{% static 'assets/js/bootstrap/popper.min.js' %}"></script>
+    <script src="{% static 'assets/js/bootstrap/bootstrap.min.js' %}"></script>
+
+    <!-- Plugins js -->
+    <script src="{% static 'assets/js/plugins/plugins.min.js' %}"></script>
+
+    <!-- Active js -->
+    <script src="{% static 'assets/js/active.js' %}"></script>
+</html>
