@@ -111,22 +111,14 @@
                         <li class="nav-item"><a style="color:#FF3131;" href="{% url 'webapp:clients' %}" class="nav-link">clients</a></li>
                         <li class="nav-item"><a style="color:#FF3131;" href="{% url 'webapp:faq' %}" class="nav-link">FAQ</a></li>
                         
-                        <li class="nav-item"><a style="color:#FF3131;" href="404.html" class="nav-link">Careers</a></li>
+                        <li class="nav-item"><a style="color:#FF3131;" href="#" class="nav-link">Careers</a></li>
                             
                     </ul>
                     <!-- Navbar Icons -->
                     <ul class="navbar-nav icons">
-                        <li class="nav-item">
-                            <a href="#" class="nav-link" data-toggle="modal" data-target="#search">
-                                <i style="color:#FF3131;" class="fas fa-search"></i>
-                            </a>
-                        </li>
-                        <li class="nav-item social">
-                            <a href="#" class="nav-link"><i style="color:#FF3131;" class="fab fa-facebook-f"></i></a>
-                        </li>
-                        <li class="nav-item social">
-                            <a href="#" class="nav-link"><i style="color:#FF3131;" class="fab fa-twitter"></i></a>
-                        </li>
+                        
+                        
+                        <li class="list-inline-item px-1"><a href="https://www.linkedin.com/company/atharva-infotech-pvt-ltd/"><i class="fab fa-linkedin-in"></i></a></li>
                     </ul>
 
                     <!-- Navbar Toggler -->
@@ -668,11 +660,10 @@
                                 <!-- Footer Title -->
                                 <h3 class="footer-title text-uppercase mb-2">About Us</h3>
                                 <ul>
-                                    <li class="py-2"><a class="text-black-50" href="#">Company Profile</a></li>
-                                    <li class="py-2"><a class="text-black-50" href="#">Testimonials</a></li>
+                                    <li class="py-2"><a class="text-black-50" href="{% url 'webapp:about' %}">Company Profile</a></li>
                                     <li class="py-2"><a class="text-black-50" href="#">Careers</a></li>
-                                    <li class="py-2"><a class="text-black-50" href="#">Partners</a></li>
-                                    <li class="py-2"><a class="text-black-50" href="#">Affiliate Program</a></li>
+                                    <li class="py-2"><a class="text-black-50" href="{% url 'webapp:partners' %}">Partners</a></li>
+                                    <!-- <li class="py-2"><a class="text-black-50" href="#">Affiliate Program</a></li> -->
                                 </ul>
                             </div>
                         </div>
@@ -681,12 +672,9 @@
                             <div class="footer-items">
                                 <!-- Footer Title -->
                                 <h3 class="footer-title text-uppercase mb-2">Services</h3>
-                                <ul>
-                                    <li class="py-2"><a class="text-black-50" href="#">Web Application</a></li>
-                                    <li class="py-2"><a class="text-black-50" href="#">Product Management</a></li>
-                                    <li class="py-2"><a class="text-black-50" href="#">User Interaction Design</a></li>
-                                    <li class="py-2"><a class="text-black-50" href="#">UX Consultant</a></li>
-                                    <li class="py-2"><a class="text-black-50" href="#">Social Media Marketing</a></li>
+                                <ul>                              
+                                    <li class="py-2"><a class="text-black-50" href="{% url 'webapp:solutions' %}">B2B2C, B2B2E Solution</a></li>
+                                    <li class="py-2"><a class="text-black-50" href="{% url 'webapp:solutions' %}">B2B, B2C, B2E Solution</a></li>                                    
                                 </ul>
                             </div>
                         </div>
@@ -696,11 +684,8 @@
                                 <!-- Footer Title -->
                                 <h3 class="footer-title text-uppercase mb-2">Support</h3>
                                 <ul>
-                                    <li class="py-2"><a class="text-black-50" href="#">Frequently Asked</a></li>
-                                    <li class="py-2"><a class="text-black-50" href="#">Terms &amp; Conditions</a></li>
-                                    <li class="py-2"><a class="text-black-50" href="#">Privacy Policy</a></li>
-                                    <li class="py-2"><a class="text-black-50" href="#">Help Center</a></li>
-                                    <li class="py-2"><a class="text-black-50" href="#">Contact Us</a></li>
+                                    <li class="py-2"><a class="text-black-50" href="{% url 'webapp:faq' %}">Frequently Asked</a></li>
+                                    <li class="py-2"><a class="text-black-50" href="{% url 'webapp:contact' %}">Contact Us</a></li>
                                 </ul>
                             </div>
                         </div>
@@ -709,14 +694,9 @@
                             <div class="footer-items">
                                 <!-- Footer Title -->
                                 <h3 class="footer-title text-uppercase mb-2">Follow Us</h3>
-                                <p class="mb-2">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tenetur, quae.</p>
                                 <!-- Social Icons -->
                                 <ul class="social-icons list-inline pt-2">
-                                    <li class="list-inline-item px-1"><a href="#"><i class="fab fa-facebook"></i></a></li>
-                                    <li class="list-inline-item px-1"><a href="#"><i class="fab fa-twitter"></i></a></li>
-                                    <li class="list-inline-item px-1"><a href="#"><i class="fab fa-google-plus"></i></a></li>
-                                    <li class="list-inline-item px-1"><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
-                                    <li class="list-inline-item px-1"><a href="#"><i class="fab fa-instagram"></i></a></li>
+                                    <li class="list-inline-item px-1"><a href="https://www.linkedin.com/company/atharva-infotech-pvt-ltd/"><i class="fab fa-linkedin-in"></i></a></li>
                                 </ul>
                             </div>
                         </div>
