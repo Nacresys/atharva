@@ -14,4 +14,5 @@ urlpatterns = [
     path('upload_clients',views.upload_clients,name="upload_clients"),
     path('solutions',views.solutions,name="solutions"),
     path('faq',views.faq,name="faq"),
+    path('careers',views.careers,name="careers"),
 ]
