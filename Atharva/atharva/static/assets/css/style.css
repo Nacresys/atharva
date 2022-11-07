@@ -742,6 +742,10 @@ img {
     background: url("../img/bg/solutions1.png") no-repeat fixed center center / cover;
 }
 
+.breadcrumb-area-careers {
+    background: url("../img/bg/careers.png") no-repeat fixed center center / cover;
+}
+
 .breadcrumb-area-contact {
     background: url("../img/bg/inner_bg.png") no-repeat fixed center center / cover;
 }
@@ -2383,6 +2387,11 @@ body.dark,
 :: 19.0 BREADCRUMB AREA CSS
 ****************************** */
 .breadcrumb-area-about {
+    height: 550px;
+    z-index: 1;
+}
+
+.breadcrumb-area-careers {
     height: 550px;
     z-index: 1;
 }
