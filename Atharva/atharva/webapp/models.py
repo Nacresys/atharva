@@ -38,3 +38,12 @@ class clients(models.Model):
 
     class Meta:
         db_table = 'clients'
+
+class job_description(models.Model):
+    title = models.CharField(max_length=250)
+    qualification = models.CharField(max_length=250)
+    capabilities = models.CharField(max_length=250)
+    jdfile = models.CharField(max_length=250)
+
+    class Meta:
+        db_table = 'job_description'        
