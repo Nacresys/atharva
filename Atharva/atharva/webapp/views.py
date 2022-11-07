@@ -71,3 +71,25 @@ def solutions(request):
 
 def faq(request):
     return render(request,"faq.html")
+
+
+def jd(request):
+    if request.method == 'POST':
+        try:
+            title = request.POST.get("title")
+            qfication = request.POST.get("qualification")
+            capabilities = request.POST.get("capabilities")
+            jdfile = request.FILES['jdfile']
+            fc = FileSystemStorage()
+            fname = fc.save(jdfile.name, jdfile)
+            jd_url = fc.url(fname)
+            sc = job_description(title=title,jdfile=jd_url,qualification=qfication,capabilities=capabilities)
+            sc.save()
+            return redirect('/administrator')
+        except:
+            pass
+    return render(request, "administrator.html")
+
+def careers(request):
+    jdlist = job_description.objects.all()
+    return render(request,"careers.html",{"jd":jdlist})
